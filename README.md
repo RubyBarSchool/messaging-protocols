@@ -1,7 +1,7 @@
 # messaging-protocols
 Message Protocols Overview
 
-[Udemy](https://www.udemy.com/course/learn-rabbitmq-asynchronous-messaging-with-java-and-spring/)
+[Udemy Course 1](https://www.udemy.com/course/learn-rabbitmq-asynchronous-messaging-with-java-and-spring/)
 ## STOMP - Simple Text-Oriented Messaging Protocol
 ### Overview
 <img src="Image/STOMP.png" alt="STOMP" >
