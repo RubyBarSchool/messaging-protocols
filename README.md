@@ -18,3 +18,4 @@ Message Protocols Overview
 
 ## RabbitMQ
 [Udemy Course 1](https://www.udemy.com/course/learn-rabbitmq-asynchronous-messaging-with-java-and-spring/)
+[Udemy Course 2](https://www.udemy.com/course/rabbitmq-and-messaging-concepts/)
