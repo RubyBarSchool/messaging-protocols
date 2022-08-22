@@ -67,10 +67,22 @@ Push Model
 
 ```bash
 Pull Model
-* Consumer application subscribes to the queue and waits for message
-* if there is already a message on the queue
-* Or when a new message arrives, it is automatically sent(pushed) to the consumer application.
-* this is the suggested way of getting message from a queue
+* Consumer application does not subscribe to the queue.
+* But it constantly checks(polls) the queue for new message.
+* If there is a message available on the queue, it is manually fetches (pulled) by the consumer
+* Even though the pull mode is not recommended, it is the only solution when there is no live connection between message broker and consumer applications
 ```
-<img src="Image/PushModel.png" alt="Push Model" >
+<img src="Image/PullModel.png" alt="Pull Model" >
+
+#### Work Queues
+```bash
+Work/Task Queues (Competing consumers pattern)
+* Work queue are used to distribute tasks among multiple workers.
+* Producers add tasks to a queue and these tasks are distributed to multiple worker applicatrions.
+* Pull or push models can be used to distribute tasks among the workers. 
+    Pull Model: Workers get a message from the queue when they are available to perform a task
+    Push Model: Message broker system sends (pushes) messages to the avaliable works automatically.
+* Sample Scenario: Sending emails.
+```
+
 
