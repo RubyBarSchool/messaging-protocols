@@ -22,7 +22,7 @@ Message Protocols Overview
 
 
 ```bash
-Exchange:(Fanout, Direct, Topic, Headers, Default)
+Exchange:(Fanout, Direct, Topic, Headers, Default, Alternate)
 
 * Fanout: Send to all Queue
 * Direct: Send to queue if queue have the same routing-key
@@ -50,4 +50,5 @@ if use headers should forcus x-match. if x-match == all then message should the 
 
 * Default: The same direct but dont have name and if message have rourting-key the same name queue then pass
 
+* Alternate: Exchange rule save other message dont send to queue in other exchange (if exchange want cover miss message can add "alternate-exchange" key for an exchange ). fanout exchanges, which do not perform any filtering, are good for using as an "alternate exchange"
 ```
