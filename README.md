@@ -75,6 +75,7 @@ Pull Model
 <img src="Image/PullModel.png" alt="Pull Model" >
 
 #### Work Queues
+
 ```bash
 Work/Task Queues (Competing consumers pattern)
 * Work queue are used to distribute tasks among multiple workers.
@@ -84,5 +85,6 @@ Work/Task Queues (Competing consumers pattern)
     Push Model: Message broker system sends (pushes) messages to the avaliable works automatically.
 * Sample Scenario: Sending emails.
 ```
+<img src="Image/Work_Task_Queue.png" alt="Work/Task queue" >
 
 
