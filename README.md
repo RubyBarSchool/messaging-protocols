@@ -20,7 +20,7 @@ Message Protocols Overview
 ### [Udemy Course 1](https://www.udemy.com/course/learn-rabbitmq-asynchronous-messaging-with-java-and-spring/)
 ### [Udemy Course 2](https://www.udemy.com/course/rabbitmq-and-messaging-concepts/)
 
-
+#### Exchange
 ```bash
 Exchange:(Fanout, Direct, Topic, Headers, Default, Alternate)
 
@@ -52,3 +52,13 @@ if use headers should forcus x-match. if x-match == all then message should the 
 
 * Alternate: Exchange rule save other message dont send to queue in other exchange (if exchange want cover miss message can add "alternate-exchange" key for an exchange ). fanout exchanges, which do not perform any filtering, are good for using as an "alternate exchange"
 ```
+
+#### Push and Pull model
+```bash
+Push
+* Consumer application subscribes to the queue and waits for message
+* if there is already a message on the queue
+* Or when a new message arrives, it is automatically sent(pushed) to the consumer application.
+* this is the suggested way of getting message from a queue
+```
+
