@@ -87,4 +87,12 @@ Work/Task Queues (Competing consumers pattern)
 ```
 <img src="Image/Work_Task_Queue.png" alt="Work/Task queue" >
 
+```bash
+Issues
+* Message must not be lost if the vroker application crashes or restarts.
+* Every message must be delivered and processed for exactly one time.
+* If the worker application crashes or fails to process a task, it must be re-added to the queue and delivered later.
+* There must be a limit for retrying failed tasks, otherwise the queue may be filled up by the constantly failing tasks.
+* Task workload should be fairly distributed among the workers
+```
 
