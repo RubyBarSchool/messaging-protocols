@@ -55,10 +55,11 @@ if use headers should forcus x-match. if x-match == all then message should the 
 
 #### Push and Pull model
 ```bash
-Push
+Push Model
 * Consumer application subscribes to the queue and waits for message
 * if there is already a message on the queue
 * Or when a new message arrives, it is automatically sent(pushed) to the consumer application.
 * this is the suggested way of getting message from a queue
 ```
+<img src="Image/PushModel.png" alt="Push Model" >
 
